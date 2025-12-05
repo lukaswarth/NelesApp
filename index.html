@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  /manifest.json
+  <title>Live Distance</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; margin: 1rem; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+    button { padding: .6rem 1rem; margin-right: .6rem; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <h1>Live Distance</h1>
+
+  <div class="card">
+    <div>Entfernung: <strong id="distance">–</strong></div>
+    <div>Andere Person zuletzt: <span id="otherTime">–</span></div>
+    <div class="mono">Meine Position: <span id="myPos">–</span></div>
+    <div class="mono">Andere Position: <span id="otherPos">–</span></div>
+  </div>
+
+  <div class="card">
+    <button id="loginBtn">Anmelden</button>
+    <button id="refreshBtn">Manuell aktualisieren</button>
+    <p style="margin-top:.6rem">
+      Hinweis: Standort wird nur aktualisiert, solange die App <strong>geöffnet</strong> ist
+      (Browser-Restriktion für Geolocation).
+    </p>
+  </div>
+
+  /main.js</script>
+</body>
+</html>
