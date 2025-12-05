@@ -4,17 +4,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b5fff" />
 
   <!-- Manifest für PWA -->
-  <script>manifest.json</script>
+  manifest.json
+
+  <!-- Favicon & Icons -->
+  icons/icon-192.png
+  icons/icon-512.png
   <!-- iOS Touch Icons -->
-  <link>/icons/icon-192.png</link>
-  <link>/icons/icon-512.png</link>
+  icons/icon-192.png
+  icons/icon-512.png
 
   <title>Live Distance</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: system-ui, sans-serif; margin: 1rem; }
+    body { font-family: system-ui, sans-serif; margin: 1rem; line-height: 1.35; }
     .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
     button { padding: .6rem 1rem; margin-right: .6rem; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
@@ -36,10 +41,12 @@
     <button id="refreshBtn">Manuell aktualisieren</button>
     <p style="margin-top:.6rem">
       Hinweis: Standort wird nur aktualisiert, solange die App <strong>geöffnet</strong> ist
-      (Browser-Restriktion für Geolocation).
+      (Browser-Restriktion für Geolocation). Für genaue Live-Updates: Display anlassen oder
+      Intervall-Updates nutzen.
     </p>
   </div>
+
   <!-- JavaScript einbinden -->
-<script>main.js</script>
+  main.js</script>
 </body>
 </html>
